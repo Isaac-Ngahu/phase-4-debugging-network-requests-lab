@@ -14,6 +14,7 @@ class ToysController < ApplicationController
 
   def update
     toy = Toy.find_by(id: params[:id])
+    toy_params[:likes]+=1
     toy.update(toy_params)
   end
 
