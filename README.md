@@ -63,11 +63,19 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  seeing what happened when i clicked the add toy button on the frontend and looking in the network area for any logs of what was happening
+  noticing there was an error originating from the server 
+  checking the server side for the error and correcting it from Toys.create to Toy.create
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  clicking the like button then checking the network area to see what is going on in the backend
+  seeing the likes were not properly updating the database then correcting it
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  clicking the donate button then checking the network area
+  seeing that the route was not defined in the backend
+  adding the route then testing the donate button
